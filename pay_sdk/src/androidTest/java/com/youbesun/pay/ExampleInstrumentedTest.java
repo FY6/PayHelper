@@ -1,5 +1,6 @@
 package com.youbesun.pay;
 
+import android.app.Activity;
 import android.content.Context;
 import androidx.test.InstrumentationRegistry;
 import androidx.test.runner.AndroidJUnit4;
@@ -22,5 +23,6 @@ public class ExampleInstrumentedTest {
         Context appContext = InstrumentationRegistry.getTargetContext();
 
         assertEquals("com.youbesun.pay.test", appContext.getPackageName());
+        PayHelper.create((Activity) appContext).alPay("");
     }
 }
