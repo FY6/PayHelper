@@ -34,7 +34,7 @@ dependencies {
     androidTestImplementation 'androidx.test:runner:1.2.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
     kapt project(':compiler')
-    implementation 'com.github.FY6:PayHelper:master-123fb8407b-1'
+    implementation project(':pay_sdk')
 }
 
 

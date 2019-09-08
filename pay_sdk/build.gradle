@@ -2,9 +2,10 @@ apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-kapt'
-
 apply plugin: 'com.github.dcendents.android-maven'
 group = 'com.github.FY6'
+def library_version = '1.0.5'
+version = library_version
 
 android {
     compileSdkVersion 28
@@ -49,3 +50,13 @@ dependencies {
     api 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:5.4.0'
     api project(':annotations')
 }
+
+task sourcesJar(type: Jar) {
+    classifier = 'sources'
+    from android.sourceSets.main.javaDirectories
+}
+
+artifacts {
+    archives sourcesJar
+}
+
