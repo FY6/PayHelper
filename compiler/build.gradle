@@ -1,0 +1,14 @@
+//import org.gradle.internal.jvm.Jvm
+
+apply plugin: 'java-library'
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.squareup:javapoet:1.10.0'
+    implementation project(':annotations')
+    //需要使用AST功能导入
+//    compile files(Jvm.current().toolsJar)
+}
+
+sourceCompatibility = "1.8"
+targetCompatibility = "1.8"

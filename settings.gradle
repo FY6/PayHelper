@@ -1,0 +1,1 @@
+include ':app', ':annotations', ':pay_sdk', ':compiler'
