@@ -15,7 +15,7 @@
 * 2. Add the dependency
 
 			dependencies {
-
+ 		     kapt project(':compiler')
 	             implementation 'com.github.FY6:PayHelper:version'
 			}
 
