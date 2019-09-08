@@ -48,5 +48,5 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
     implementation(name: 'alipaySdk-15.6.5-20190718211148', ext: 'aar')
     api 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:5.4.0'
-    api project(':annotations')
+    compileOnly project(':annotations')
 }
