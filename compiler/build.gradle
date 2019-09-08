@@ -2,7 +2,8 @@
 
 apply plugin: 'java-library'
 
-group='com.github.FY6'
+apply plugin: 'com.github.dcendents.android-maven'
+group = 'com.github.FY6'
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
@@ -14,3 +15,14 @@ dependencies {
 
 sourceCompatibility = "1.8"
 targetCompatibility = "1.8"
+
+
+buildscript {
+    dependencies {
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:2.1'
+    }
+    repositories {
+        mavenLocal()
+        jcenter()
+    }
+}

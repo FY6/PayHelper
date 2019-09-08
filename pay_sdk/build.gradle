@@ -3,8 +3,8 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-kapt'
 
-
-group='com.github.FY6'
+apply plugin: 'com.github.dcendents.android-maven'
+group = 'com.github.FY6'
 
 android {
     compileSdkVersion 28
