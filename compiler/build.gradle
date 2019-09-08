@@ -2,6 +2,9 @@
 
 apply plugin: 'java-library'
 
+group='com.github.FY6'
+version = '1.0.1'
+
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'com.squareup:javapoet:1.10.0'
