@@ -8,14 +8,18 @@
 				repositories {
 						...
 					maven { url 'https://jitpack.io' }
+        			flatDir {
+            			dirs 'libs'
+       				 }
 				}
 			}
 
 
 * 2. Add the dependency
 
+            // module
 			dependencies {
- 		     kapt project(':compiler')
+				 kapt project(':compiler')
 	             implementation 'com.github.FY6:PayHelper:version'
 			}
 
