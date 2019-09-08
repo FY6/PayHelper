@@ -20,7 +20,7 @@
             // module
 			dependencies {
 				 kapt project(':compiler')
-	             implementation 'com.github.FY6:PayHelper:version'
+	             implementation 'com.github.FY6:PayHelper:1.0.2'
 			}
 
 * 3.demo
